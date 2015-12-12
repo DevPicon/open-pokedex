@@ -7,7 +7,7 @@
     android:padding="@dimen/margin_keyline">
 
     <ImageView
-        android:id="@+id/iconPokemon"
+        android:id="@+id/imgPokemonIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:scaleType="centerCrop"
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_keyline"
-        android:layout_toRightOf="@+id/iconPokemon"
+        android:layout_toRightOf="@+id/imgPokemonIcon"
         android:text="Pikachu"
         android:textAppearance="?attr/textAppearanceListItem"
         android:textSize="@dimen/item_subheading" />
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtPokemonName"
         android:layout_marginLeft="@dimen/margin_keyline"
-        android:layout_toRightOf="@+id/iconPokemon"
+        android:layout_toRightOf="@+id/imgPokemonIcon"
         android:ellipsize="end"
         android:singleLine="true"
         android:text="Electric"
