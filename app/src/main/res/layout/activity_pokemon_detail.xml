@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="pe.picondev.android.openpokedex.presentation.activities.PokemonDetailActivity">
+
+    <ImageView
+        android:id="@+id/img_pokemon_artwork"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:padding="@dimen/margin_keyline"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pikachu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pikachu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="HP" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="35" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_attack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Attack" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_attack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="55" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_defense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Defense" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_defense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Speed" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="90" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_speed_attack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Speed Attack" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_speed_attack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_speed_defense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Speed Defense" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_speed_defense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_keyline"
+            android:paddingTop="@dimen/margin_keyline">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_keyline"
+                android:layout_weight="1"
+                android:text="Type" />
+
+            <TextView
+                android:id="@+id/txt_pokemon_detail_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="electric" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
