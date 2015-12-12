@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_keyline">
+
+    <ImageView
+        android:id="@+id/iconPokemon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pikachu" />
+
+    <TextView
+        android:id="@+id/txtPokemonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_keyline"
+        android:layout_toRightOf="@+id/iconPokemon"
+        android:text="Pikachu"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/item_subheading" />
+
+    <TextView
+        android:id="@+id/txtPokemonType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPokemonName"
+        android:layout_marginLeft="@dimen/margin_keyline"
+        android:layout_toRightOf="@+id/iconPokemon"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Electric"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/item_body"/>
+
+
+</RelativeLayout>
