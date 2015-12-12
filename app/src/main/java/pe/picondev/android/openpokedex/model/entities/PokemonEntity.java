@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class PokemonEntity implements Serializable {
 
-    private String id;
+    private int id;
     private String name;
     private String hp;
     private String attack;
@@ -18,6 +18,16 @@ public class PokemonEntity implements Serializable {
     private String type;
     private String spriteUrl;
     private String artworkUrl;
+
+    public PokemonEntity() {
+        super();
+    }
+
+    public PokemonEntity(int id, String name, String type) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
+    }
 
     public String getArtworkUrl() {
         return artworkUrl;
@@ -51,11 +61,11 @@ public class PokemonEntity implements Serializable {
         this.hp = hp;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -15,6 +15,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         onCreate();
     }
 
+
     protected abstract void onCreate();
     protected abstract int getLayoutResourceId();
 }

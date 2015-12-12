@@ -7,29 +7,29 @@
     android:padding="@dimen/margin_keyline">
 
     <ImageView
-        android:id="@+id/imgPokemonIcon"
+        android:id="@+id/img_pokemon_icon"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:scaleType="centerCrop"
         android:src="@drawable/pikachu" />
 
     <TextView
-        android:id="@+id/txtPokemonName"
+        android:id="@+id/txt_pokemon_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin_keyline"
-        android:layout_toRightOf="@+id/imgPokemonIcon"
+        android:layout_toRightOf="@+id/img_pokemon_icon"
         android:text="Pikachu"
         android:textAppearance="?attr/textAppearanceListItem"
         android:textSize="@dimen/item_subheading" />
 
     <TextView
-        android:id="@+id/txtPokemonType"
+        android:id="@+id/txt_pokemon_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtPokemonName"
+        android:layout_below="@+id/txt_pokemon_name"
         android:layout_marginLeft="@dimen/margin_keyline"
-        android:layout_toRightOf="@+id/imgPokemonIcon"
+        android:layout_toRightOf="@+id/img_pokemon_icon"
         android:ellipsize="end"
         android:singleLine="true"
         android:text="Electric"
